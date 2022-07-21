@@ -1,0 +1,143 @@
+ /*------------------------------------------------------------------------------ SIDEBAR ------------------------------------------------------------------------ */
+ 
+ /* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+} 
+
+
+ /*----------------------------------------------------------------------- tables alphabet-------------------------------------------------------------------------------------------*/
+
+ table.alpha  {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid purple;
+
+}
+
+
+ /*------------------------------------------------------------------------------ TABS ------------------------------------------------------------------------ */
+
+  /* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  /*padding: 6px 12px;*/
+  border: 1px solid #ccc;
+  border-top: none;
+
+  position:relative;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+} 
+
+
+
+ /*------------------------------------------------------------------------------ contenu  ------------------------------------------------------------------------ */
+
+.maintitle {
+  font-size: 24;
+}
+
+ .finalcontent {
+  position:relative;
+  background-color: #CDCDCD;
+  max-width: 900px;
+  margin: 0 auto 20px;
+
+ }
+
+ .imgcontent {
+  max-width : 100%;
+  /*text-align: center;*/ 
+
+ }
+
+ .imgdiv {
+  max-width:400px;
+  min-width:100px;
+  margin: 10px auto 10px;
+  border-style: solid;
+  border-width: 1px;
+
+ }
+
+
+
+
+
+
+
+
+

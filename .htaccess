@@ -1,0 +1,7 @@
+Header add Access-Control-Allow-Origin "*"
+Header add Access-Control-Allow-Methods: "GET,POST,OPTIONS,DELETE,PUT"
+Header always add Access-Control-Allow-Headers "append,delete,entries,foreach,get,has,keys,set,values,Authorization,Content-Type"
+
+RewriteEngine On
+RewriteCond %{REQUEST_METHOD} OPTIONS
+RewriteRule ^(.*)$ $1 [R=200,L]

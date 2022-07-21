@@ -1,0 +1,94 @@
+
+       <div class="sidenav" style="width:10%">
+
+
+
+  
+  <a href="/index.php">Accueil</a>
+  <a href="/country/quizz_cities.php">Quizz villes</a>
+  <a href="/country/quizz_tel.php">Quizz N° de téléphone</a>
+  <button class="dropdown-btn">Alphabets non latins
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="/alphabet/cyr.php">cyrillique</a>
+    <a href="/alphabet/greek.php">grec</a>
+  </div>
+
+
+  <button class="dropdown-btn">Amérique
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="/country/canada.php">Canada</a>
+    <a href="/country/usa.php">USA</a>
+    <a href="/country/quizz_cities_usa.php">Quizz villes USA</a>
+    <a href="/country/quizz_usa.php">Quizz US state highways</a>
+  </div>
+
+
+
+<button class="dropdown-btn">Europe
+  <i class="fa fa-caret-down"></i>
+</button>
+<div class="dropdown-container">
+  <a href="/country/belgium.php">Belgique</a>
+  <a href="/country/greece.php">Grece</a>
+  <a href="/country/sweden.php">Suède</a>
+</div>
+ 
+
+<button class="dropdown-btn">Afrique
+  <i class="fa fa-caret-down"></i>
+</button>
+<div class="dropdown-container">
+  <a href="#">?</a>
+</div>
+
+
+<button class="dropdown-btn">Asie + Océanie
+  <i class="fa fa-caret-down"></i>
+</button>
+<div class="dropdown-container">
+  <a href="/country/indonesia.php">Indonesie</a>
+  <a href="/country/indonesia_quizz.php">Indonesie - Quizz</a>
+  <a href="/country/kirghizistan.php">Kirghizistan</a>
+  <a href="/country/malaysia.php">Malaisie</a>
+  <a href="/country/vietnam.php">Vietnam</a>
+</div>
+
+<button class="dropdown-btn">Guides débutants
+  <i class="fa fa-caret-down"></i>
+</button>
+<div class="dropdown-container">
+ <!-- <a href="#">Les modes de jeu</a>
+  <a href="#">Les pays anglophones</a>
+  <a href="#">Amérique du sud</a>-->
+  <a href="/beginner/afrique.php">Afrique</a>
+  <!-- <a href="/beginner/europe.php">Europe</a>-->
+  <a href="/beginner/asia.php">Asie</a>
+</div>
+<a href="/index_en.php"><img src="/img/english.png" width="100" height="50"></img></a>
+<!--<a href="#cartes">Cartes et challenges classiques</a>
+<a href="#contact">Coop et team vs team</a>
+<a href="#contact">Search</a>*-->
+</div>
+
+<script>
+  //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+} 
+</script>
+
